@@ -1,0 +1,29 @@
+
+procedure( findPrimitive( cv )
+  let( ( inst cellView i)
+    if( cv 
+    then
+		  foreach( inst cv->instances 
+	      if( inst->cellView
+	      then
+			    case( inst->libName 
+			      ("umc55lp"  if(!rexMatchList( inst->cellName primitives) then primitives=cons( inst->cellName primitives ) ) )
+			      ("basic"  i=1)
+			      ("analogLib" i=1)
+			      ("US_8ths" i=1)
+		        ( t findPrimitive( dbOpenCellViewByType( inst->libName inst->cellName   "schematic" "schematic" "r") ) )
+			    )
+	      )
+		  )
+    )
+  )
+)
+procedure( HierFind( libName cellName  viewName )
+    let( ( )
+      primitives=nil
+      findPrimitive( dbOpenCellViewByType( libName cellName viewName "schematic" "r") )
+      println(primitives)
+    )
+)
+; load("/rnda10/home/kimdy/private/SKILL/findPrimitive.il")
+; HierFind( "PI4008K_AP" "pll1_top"  "schematic" )

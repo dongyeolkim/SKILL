@@ -1,0 +1,15 @@
+procedure( tpcReplaceNetPin(oldName newName )
+  let( ( dv shape term labelList )
+    cv=geGetEditCellView()
+    printf("=>Change %L to %L\n" oldName newName)
+    labelList = setof( shape cv->shapes shape->objType == "label" )
+    foreach( label labelList
+      when( label->theLabel == oldName label->theLabel=newName )
+    )
+    foreach( term cv->terminals
+      when( term->name == oldName term->name=newName )
+    )
+  )
+)
+; load("/rnda10/home/kimdy/private/SKILL/tpcReplaceNetPin.il")
+; tpcReplaceNetPin("VDD" "vdd")

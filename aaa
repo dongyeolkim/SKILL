@@ -1,0 +1,22 @@
+ 		bk("Layout" "Shift<Btn4Down>" "hiZoomRelativeScale(hiGetCurrentWindow() 0.5)")
+    bk("Layout" "Shift<Btn5Down>" "hiZoomRelativeScale(hiGetCurrentWindow() 1.5)")
+    bk("Layout" "Ctrl<Btn4Down>" "geScroll(nil \"e\" nil)")
+    bk("Layout" "Ctrl<Btn5Down>" "geScroll(nil \"w\" nil)")
+    bk("Layout" "<Btn4Down>" "geScroll(nil \"n\" nil)")
+    bk("Layout" "<Btn5Down>" "geScroll(nil \"s\" nil)")
+
+ 		bk("Schematics" "Shift<Btn4Down>" "hiZoomRelativeScale(hiGetCurrentWindow() 0.5)")
+    bk("Schematics" "Shift<Btn5Down>" "hiZoomRelativeScale(hiGetCurrentWindow() 1.5)")
+    bk("Schematics" "Ctrl<Btn4Down>" "geScroll(nil \"e\" nil)")
+    bk("Schematics" "Ctrl<Btn5Down>" "geScroll(nil \"w\" nil)")
+    bk("Schematics" "<Btn4Down>" "geScroll(nil \"n\" nil)")
+    bk("Schematics" "<Btn5Down>" "geScroll(nil \"s\" nil)")
+
+ 		bk("Symbol" "Shift<Btn4Down>" "hiZoomRelativeScale(hiGetCurrentWindow() 0.5)")
+    bk("Symbol" "Shift<Btn5Down>" "hiZoomRelativeScale(hiGetCurrentWindow() 1.5)")
+    bk("Symbol" "Ctrl<Btn4Down>" "geScroll(nil \"e\" nil)")
+    bk("Symbol" "Ctrl<Btn5Down>" "geScroll(nil \"w\" nil)")
+    bk("Symbol" "<Btn4Down>" "geScroll(nil \"n\" nil)")
+    bk("Symbol" "<Btn5Down>" "geScroll(nil \"s\" nil)")
+
+
